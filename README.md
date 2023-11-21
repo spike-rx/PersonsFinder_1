@@ -1,3 +1,9 @@
+# This is the solution without any other package, cache, database
+
+Only test 1000000 records cause the limitation f my mac
+the slowest api was find people around and sorted was 0.835s
+
+
 # Welcome
 
 This is a start-up Git repo for a project we are calling 'Persons finder'.
@@ -23,5 +29,6 @@ Steps:
 ### Add a million, 10 million and 100 million entries and challenge your API's efficiency 
 
 For any questions, please reach out on: leo@getsquareone.app
+
 
 

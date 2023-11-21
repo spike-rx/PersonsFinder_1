@@ -15,6 +15,8 @@ repositories {
 	mavenCentral()
 }
 
+
+
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
@@ -22,7 +24,12 @@ dependencies {
 	implementation("com.h2database:h2:2.1.212")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation(kotlin("test"))
 }
+
+
+
+
 
 tasks.withType<KotlinCompile> {
 	kotlinOptions {
@@ -32,5 +39,9 @@ tasks.withType<KotlinCompile> {
 }
 
 tasks.withType<Test> {
+	useJUnitPlatform()
+}
+
+tasks.test{
 	useJUnitPlatform()
 }
