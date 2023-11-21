@@ -8,6 +8,9 @@ import org.springframework.scheduling.annotation.Async
 import org.springframework.stereotype.Service
 import javax.transaction.TransactionManager
 
+/**
+ * Asynchronously store big data for testing
+ */
 @Service
 class SaveDataServiceImpl(
     private val personRepository: PersonRepository,

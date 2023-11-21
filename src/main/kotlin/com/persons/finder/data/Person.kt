@@ -7,7 +7,11 @@ import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
 import javax.persistence.Id
 
-// better not use data class for entity
+/**
+ * person
+ * @param person id
+ * @name name person name
+ */
 @Entity
 data class Person(
     @Id
