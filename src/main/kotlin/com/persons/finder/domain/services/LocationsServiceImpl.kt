@@ -77,7 +77,10 @@ class LocationsServiceImpl(
         }
         val searchLocation = SearchLocation(location.longitude, location.latitude, maxLongitude, minLongitude, maxLatitude, minLatitude)
         // find all location in minLatitude - maxLatitude and minLongitude and maxLongitude
-        return locationRepository.findReferenceIdByLatitudeBetweenAndLongitudeBetween(searchLocation)
+        val userNearby: List<Long> = locationRepository.findReferenceIdByLatitudeBetweenAndLongitudeBetween(searchLocation);
+        // exclude self
+        val result = userNearby.filter { it != referenceId };
+        return result;
     }
 
 
