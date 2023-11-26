@@ -1,4 +1,4 @@
-package com.persons.finder.respository
+package com.persons.finder.repository
 
 import com.persons.finder.data.Location
 import com.persons.finder.dto.SearchLocation

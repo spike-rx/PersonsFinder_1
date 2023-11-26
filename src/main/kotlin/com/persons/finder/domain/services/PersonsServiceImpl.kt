@@ -1,7 +1,7 @@
 package com.persons.finder.domain.services
 
 import com.persons.finder.data.Person
-import com.persons.finder.respository.PersonRepository
+import com.persons.finder.repository.PersonRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 import javax.transaction.Transactional

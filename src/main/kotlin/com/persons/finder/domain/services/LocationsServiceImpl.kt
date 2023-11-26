@@ -2,7 +2,7 @@ package com.persons.finder.domain.services
 
 import com.persons.finder.data.Location
 import com.persons.finder.dto.SearchLocation
-import com.persons.finder.respository.LocationRepository
+import com.persons.finder.repository.LocationRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 import javax.transaction.Transactional

@@ -2,13 +2,11 @@ package com.persons.finder.domain.services
 
 import com.persons.finder.data.Location
 import com.persons.finder.data.Person
-import com.persons.finder.respository.LocationRepository
-import com.persons.finder.respository.PersonRepository
-import org.springframework.beans.factory.annotation.Value
+import com.persons.finder.repository.LocationRepository
+import com.persons.finder.repository.PersonRepository
 import org.springframework.scheduling.annotation.Async
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
-import javax.transaction.TransactionManager
 
 /**
  * Asynchronously store big data for testing
